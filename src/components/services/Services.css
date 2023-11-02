@@ -1,0 +1,36 @@
+.services_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom:3rem;
+  margin-Top:3rem;
+}
+
+.services_boxes {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.batteryicon,
+.pumpicon,
+.hearticon {
+  font-size: 40px;
+  color: var(--color-brown);
+}
+.heading_service {
+  font-weight: 800;
+  /* font-size: medium; */
+}
+.services_para {
+  font-size: small;
+  color: var(--color-gray);
+  text-align: center;
+  word-spacing: 3px;
+  line-height: 1.6;
+}

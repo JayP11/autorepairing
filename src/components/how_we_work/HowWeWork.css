@@ -1,0 +1,56 @@
+.HowWeWork_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.howweworktitle {
+  font-weight: 900;
+  font-size: 35px;
+}
+.box_main_outer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.box_main_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.num_head {
+  width: 60px;
+  border: solid 2px;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  background: var(--color-brown);
+  color: var(--color-white);
+  font-weight: 900;
+  transform: translateY(39px) translateX(12px);
+}
+.title_head {
+  width: 270px;
+  /* height: 100px; */
+  font-weight: 800;
+  font-size: 17px;
+  background-color: var(--color-lightgray);
+  display: flex;
+  padding: 2rem 10px 1rem;
+}
+
+.para_head {
+  width: 270px;
+  font-size: 14px;
+  color: var(--color-gray);
+}

@@ -1,0 +1,49 @@
+.IntegratedPaymentHome_main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1140px;
+  margin-top: 8rem;
+}
+
+.IntegratedPaymentcontent_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+ 
+
+/* ******** FadeInUp*/
+
+
+.IntegratedPaymentcontent_inner {
+  animation: fadeInUp 1s ease-in both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+ /* CSS for fadeInDown animation */
+.fadeInDown {
+  animation: fadeInDown 1s ease-in-out;
+  opacity: 0;
+}
+
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

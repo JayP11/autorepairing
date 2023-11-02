@@ -1,0 +1,27 @@
+.title_main {
+  margin-left: 2rem;
+  padding-left: 6rem;
+  /* font-size: 25px; */
+  width: 45%;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.button_booknow {
+  padding: 1rem;
+  cursor: pointer;
+  color: var(--color-white);
+  font-weight: 900;
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  text-transform: uppercase;
+  word-spacing: 2px;
+}
+
+.button_booknow:hover {
+  background-color: var(--color-brown);
+  transition: all 0.4s ease-in-out;
+}

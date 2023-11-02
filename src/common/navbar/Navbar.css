@@ -1,0 +1,118 @@
+.Navbar_main {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+  height: 100px;
+  align-items: center;
+}
+
+.nav_logo_main {
+  margin-left: 15px;
+}
+.contact_call_main,
+.hours_call_main {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.phcall_icon,
+.clock_icon {
+  font-size: 25px;
+  color: var(--color-brown);
+}
+.callusnow,
+.openinghours {
+  text-transform: uppercase;
+}
+.phno,
+.time {
+  color: var(--color-gray);
+  font-size: 12px;
+}
+
+.contact_details {
+  display: flex;
+  gap: 1.5rem;
+  margin-right: 15px;
+}
+
+.nav-Login-btn {
+  border: 2px solid var(--color-brown);
+}
+.nav-Login-btn:hover {
+  border: 2px solid;
+}
+.demo-btn {
+  display: flex;
+  gap: 0.5rem;
+  border: 2px solid var(--color-brown);
+}
+
+.demo-btn:hover {
+  border: 2px solid;
+}
+
+.side_icon {
+  display: none;
+  width: 45px;
+  height: 30px;
+  /* border: none; */
+  color: var(--color-brown);
+  cursor: pointer;
+}
+
+.sidebar_base_wrapp {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .contact_details {
+    display: none;
+  }
+
+  .side_icon {
+    display: block;
+    margin-right: 15px;
+  }
+  .sidebar_main_wrapp {
+    width: 100%;
+    /* background: var(--color-brown); */
+    padding: 3% 0 0 0;
+    margin-top: 1%;
+    position: fixed;
+    top: 60px;
+    z-index: 99;
+  }
+
+  .sidebar_base_wrapp {
+    display: block;
+    padding: 4%;
+    border: 1px solid var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    background-color: var(--color-white);
+    border-top: 2px solid;
+  }
+
+  /* .sidebar_link {
+    padding: 10px;
+    min-width: 200px;
+    min-width: 200px;
+    border: 1px solid var(--color-black);
+    background: transparent;
+    color: var(--color-black);
+    font-size: 1rem;
+  } */
+
+  /* .sidebar_link:hover {
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+    background: var(--color-black);
+    cursor: pointer;
+  } */
+}

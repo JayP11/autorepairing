@@ -1,0 +1,27 @@
+.WorkingSteps_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  margin-top: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dash_image {
+  height: 100%;
+  width: 100%;
+}
+
+.garage_icon_image {
+  height: 90px;
+  width: 90px;
+}
+
+.garageicon_heading {
+  gap: 1rem;
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

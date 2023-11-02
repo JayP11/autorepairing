@@ -1,0 +1,20 @@
+.VehicleInspection_main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1140px;
+  margin-top: 6rem;
+  gap: 4rem;
+}
+
+.VehicleInspection_image {
+  height: 320px;
+  border-radius: 7px;
+  width: 450px;
+}
+
+.VehicleInspection_main_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

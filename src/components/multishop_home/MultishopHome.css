@@ -1,0 +1,20 @@
+.MultishopHome_main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1140px;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  gap: 4rem;
+}
+
+.MultishopHome_image {
+  height: 320px;
+  width: 450px;
+ }
+
+.MultishopHome_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

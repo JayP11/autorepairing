@@ -1,0 +1,20 @@
+.RealTimeReportingHome_main{
+   display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1140px;
+  margin-top: 6rem;
+  /* gap: 4rem; */
+}
+
+.RealTimeReportingHome_image{
+    height: 340px;
+    width: 700px;
+}
+
+
+.RealTimeReportingHome_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

@@ -1,0 +1,33 @@
+.sec_brand_main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sec_title_leadingbrand {
+  font-weight: 900;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.company_img_main {
+  width: 180px !important;
+}
+
+.company-img {
+  filter: grayscale(100%) invert(2%) contrast(83%);
+  width: 100%;
+}
+.company-img:hover {
+  filter: grayscale(0%);
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
