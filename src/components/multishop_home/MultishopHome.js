@@ -9,7 +9,7 @@ const MultishopHome = () => {
     <div className="MultishopHome_main">
       <AnimationOnScroll
         animateIn="fadeInDown"
-        animateOut="animate__bounceOutDown">
+        animateOut="animate__bounceOutDown" style={{maxWidth:"40%"}}>
         <div className="MultishopHome_image">
           <img
             src={images.multishop}

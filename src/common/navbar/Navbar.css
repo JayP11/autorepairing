@@ -9,7 +9,14 @@
 
 .nav_logo_main {
   margin-left: 15px;
+}                                                                     
+
+.contact_call_mainnav,.openinghours_time_mainnav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
+
 .contact_call_main,
 .hours_call_main {
   display: flex;
@@ -40,6 +47,7 @@
 
 .nav-Login-btn {
   border: 2px solid var(--color-brown);
+  display: flex;
 }
 .nav-Login-btn:hover {
   border: 2px solid;
@@ -61,6 +69,15 @@
   /* border: none; */
   color: var(--color-brown);
   cursor: pointer;
+  transition: all 5s ease-in;
+}
+
+.callusnow_phno,
+.openinghours_time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
 }
 
 .sidebar_base_wrapp {
@@ -97,6 +114,20 @@
     gap: 30px;
     background-color: var(--color-white);
     border-top: 2px solid;
+    transition: all 0.5s ease-in;
+    height: 100vh;
+  }
+
+  .contact_call_main,
+  .hours_call_main {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 12rem;
+    justify-content: center;
   }
 
   /* .sidebar_link {

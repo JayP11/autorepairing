@@ -20,8 +20,36 @@
 
 .garageicon_heading {
   gap: 1rem;
-  margin-top: 4.5rem;
+  /* margin-top: 4.5rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.headinggarageh1 {
+}
+@media screen and (max-width: 1250px) {
+  .garageicon_heading {
+    padding: 0 2rem;
+  }
+  .garage_icon_image {
+    height: 70px;
+    width: 70px;
+  }
+  .headinggarageh1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headinggarageh1 {
+    font-size: 17px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headinggarageh1 {
+    /* font-size: 16px; */
+  }
 }

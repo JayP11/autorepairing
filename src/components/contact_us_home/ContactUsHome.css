@@ -35,7 +35,7 @@
   padding: 1rem;
   border: none;
   font-size: 15px;
-  border: 2px solid ;
+  border: 2px solid;
   /* color: var(--color-white); */
   /* background: var(--color-lightgray); */
 }
@@ -101,5 +101,34 @@
   border: 2px solid var(--color-black);
 }
 
+.sendmessagebtn_home2{
+  display: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .ContactUsCards_mapblock{
+    padding: 0 4rem;
+  }
+}
 @media screen and (max-width: 900px) {
+  .form_sec_main_home {
+    flex-direction: column;
+    gap: 0px;
+    align-items:center;
+  }
+  
+  .sendmessagebtn_home{
+    display: none;
+  }
+  
+  .sendmessagebtn_home2{
+    display: block;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .input_field_message{
+    width: 300px;
+  }
 }

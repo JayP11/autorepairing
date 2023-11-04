@@ -8,8 +8,7 @@ import jio_mart from "../assets/jio_mart.png";
 import appointment_hero from "../assets/appointment_hero.jpeg";
 import Dashboard from "../assets/Dashboard.png";
 import garage_icon from "../assets/garage_icon.png";
-import chain from "../assets/chain.png";
- import paying from "../assets/paying.jpeg";
+import paying from "../assets/paying.jpeg";
 import vehicle_inspection from "../assets/vehicle_inspection.avif";
 import reporting from "../assets/reporting.webp";
 import multishop from "../assets/multishop.webp";
@@ -20,7 +19,8 @@ export default {
   man,
   appointment_hero,
   Dashboard,
-  garage_icon,chain,paying,
+  garage_icon,
+  paying,
   vehicle_inspection,
   reporting,
   multishop,

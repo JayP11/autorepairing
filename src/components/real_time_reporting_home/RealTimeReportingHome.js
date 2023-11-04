@@ -7,7 +7,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 const RealTimeReportingHome = () => {
   return (
     <div className="RealTimeReportingHome_main">
-      <div className="RealTimeReportingHome_inner">
+      <div className="RealTimeReportingHome_inner" style={{maxWidth:"60%"}}>
         <div>
           <h1>REAL-TIME REPORTING</h1>
         </div>
@@ -17,8 +17,7 @@ const RealTimeReportingHome = () => {
             backgroundColor: "var(--color-brown)",
             width: "200px",
           }}></div>
-        <div></div>
-        <div>
+         <div>
           <p style={{ lineHeight: "1.5", letterSpacing: "1px" }}>
             Quickly be able to see the overall health of your vehicle from
             anywhere to be able to make informed decisions.
@@ -44,7 +43,7 @@ const RealTimeReportingHome = () => {
       </div>
       <AnimationOnScroll
         animateIn="fadeInDown"
-        animateOut="animate__bounceOutDown">
+        animateOut="animate__bounceOutDown" style={{maxWidth:"40%"}}>
         <div className="RealTimeReportingHome_image">
           <img
             src={images.reporting}

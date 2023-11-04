@@ -10,6 +10,12 @@
   gap: 1.5rem;
 }
 
+.box_content_sec_main_whychoose {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: 1rem;
+}
 .whychooseustitle {
   font-weight: 900;
   font-size: 35px;
@@ -36,13 +42,31 @@
 .title_whychoose2 {
   text-align: right;
 }
-.box_para,.box_para2 {
+.box_para,
+.box_para2 {
   font-size: small;
   color: var(--color-gray);
   text-align: left;
   word-spacing: 3px;
   line-height: 1.6;
 }
-.box_para2{
+.box_para2 {
   text-align: right;
+}
+
+.standingman_div_image {
+  background-color: var(--color-brown);
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .box_content_sec_main_whychoose {
+    flex-direction: column;
+  }
+
+  .box_content_sec3 {
+    transform: translateY(100px);
+    margin-top:1rem;
+    margin-bottom:4rem;
+  }
 }

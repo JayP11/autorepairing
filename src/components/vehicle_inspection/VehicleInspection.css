@@ -4,13 +4,15 @@
   margin: 0 auto;
   max-width: 1140px;
   margin-top: 6rem;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .VehicleInspection_image {
-  height: 320px;
   border-radius: 7px;
-  width: 450px;
+  /* height: 320px;
+  width: 450px; */
+  height: 100%;
+  width: 100%;
 }
 
 .VehicleInspection_main_inner {

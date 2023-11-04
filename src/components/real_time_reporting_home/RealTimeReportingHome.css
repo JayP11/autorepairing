@@ -4,12 +4,13 @@
   margin: 0 auto;
   max-width: 1140px;
   margin-top: 6rem;
-  /* gap: 4rem; */
+  gap: 3rem;
 }
 
 .RealTimeReportingHome_image{
-    height: 340px;
-    width: 700px;
+    /* height: 340px;
+    width: 700px; */
+    /* max-width: 40%; */
 }
 
 

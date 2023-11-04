@@ -3,7 +3,7 @@ import "./IntegratedPaymentHome.css";
 import { FiArrowUpRight } from "react-icons/fi";
 import images from "../../constants/images";
 import "./IntegratedPaymentHome.css";
- import { AnimationOnScroll } from "react-animation-on-scroll";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 // import { AnimationOnScroll } from "react-animation-on-scroll";
 
@@ -11,8 +11,9 @@ const IntegratedPaymentHome = () => {
   return (
     <div className="IntegratedPaymentHome_main">
       <AnimationOnScroll
-         animateIn="fadeInUp"
-        animateOut="animate__bounceOut">
+        animateIn="fadeInUp"
+        animateOut="animate__bounceOut"
+        style={{ maxWidth: "60%" }}>
         <div className="IntegratedPaymentcontent_inner">
           <div>
             <h1>INTEGRATED PAYMENT PROCESSING</h1>
@@ -52,9 +53,14 @@ const IntegratedPaymentHome = () => {
       </AnimationOnScroll>
       <AnimationOnScroll
         animateIn="fadeInDown"
-        animateOut="animate__bounceOutDown">
-        <div className="">
-          <img src={images.paying} alt="" style={{ borderRadius: "7px" }} />
+        animateOut="animate__bounceOutDown"
+        style={{ maxWidth: "40%" }}>
+        <div className="IntegratedPaymentcontent_image">
+          <img
+            src={images.paying}
+            alt=""
+            className="IntegratedPaymentcontent_image_inner"
+          />
         </div>
       </AnimationOnScroll>
     </div>

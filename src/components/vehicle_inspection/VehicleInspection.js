@@ -8,7 +8,8 @@ const VehicleInspection = () => {
     <div className="VehicleInspection_main">
       <AnimationOnScroll
         animateIn="fadeInDown"
-        animateOut="animate__bounceOutDown">
+        animateOut="animate__bounceOutDown"
+        style={{ maxWidth: "40%" }}>
         <div className="">
           <img
             src={images.vehicle_inspection}
@@ -17,7 +18,7 @@ const VehicleInspection = () => {
           />
         </div>
       </AnimationOnScroll>
-      <div className="VehicleInspection_main_inner">
+      <div className="VehicleInspection_main_inner" style={{ maxWidth: "60%" }}>
         <div>
           <h1>DIGITAL VEHICLE INSPECTIONS</h1>
         </div>

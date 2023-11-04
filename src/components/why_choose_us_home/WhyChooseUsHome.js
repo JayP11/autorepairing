@@ -14,7 +14,7 @@ const WhyChooseUsHome = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
-        <div style={{ display: "flex", gap: "1rem", marginTop: "5rem" }}>
+        <div className="box_content_sec_main_whychoose">
           <div className="box_content_sec1">
             <div className="box_content_whychoose">
               <div>
@@ -50,9 +50,8 @@ const WhyChooseUsHome = () => {
               </div>
             </div>
           </div>
-          <div style={{ height: "100%", transform: "translateY(80px)" }}>
-            <div
-              style={{ backgroundColor: "var(--color-brown", height: "500px" }}>
+          <div style={{ height: "100%", transform: "translateY(95px)" }}>
+            <div className="standingman_div_image">
               <img
                 src={images.man}
                 alt=""

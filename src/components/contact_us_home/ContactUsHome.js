@@ -67,34 +67,41 @@ const ContactUsHome = () => {
             className="input_field_message"
           />
         </div>
+        <div>
+          <button
+            className="button sendmessagebtn_home2"
+            style={{ padding: "0.7rem", width: "100%" }}>
+            Send Message
+          </button>
+        </div>
       </div>
       {/* <div className="map_and_contact_main"> */}
-        <div className="contactdetails_home_main">
-          <div className="contactdetails_home1">
-            <h4>Phone : </h4>
-            <p className="details_p_contact">61 3 8376 6284</p>
-          </div>
-          <div className="contactdetails_home1">
-            <h3>Address : </h3>
-            <p className="details_p_contact">
-              121 King Street, Melbourne Victoria 3000 Australia
-            </p>
-          </div>
-          <div className="contactdetails_home1">
-            <h3>Email : </h3>
-            <p className="details_p_contact">Alitstudios@gmail.com</p>
-          </div>
-          <div className="contactdetails_home1">
-            <h3>Open Hours : </h3>
-            <p className="details_p_contact">Alitstudios@gmail.com</p>
-          </div>
-          <div className="socialicons_contact_home_main">
-            <FaFacebook className="socialicons_contact_home_inner" />
-            <FaInstagram className="socialicons_contact_home_inner" />
-            <FaTwitter className="socialicons_contact_home_inner" />
-            <FaYoutube className="socialicons_contact_home_inner" />
-            <FaSkype className="socialicons_contact_home_inner" />
-          </div>
+      <div className="contactdetails_home_main">
+        <div className="contactdetails_home1">
+          <h4>Phone : </h4>
+          <p className="details_p_contact">61 3 8376 6284</p>
+        </div>
+        <div className="contactdetails_home1">
+          <h3>Address : </h3>
+          <p className="details_p_contact">
+            121 King Street, Melbourne Victoria 3000 Australia
+          </p>
+        </div>
+        <div className="contactdetails_home1">
+          <h3>Email : </h3>
+          <p className="details_p_contact">Alitstudios@gmail.com</p>
+        </div>
+        <div className="contactdetails_home1">
+          <h3>Open Hours : </h3>
+          <p className="details_p_contact">Alitstudios@gmail.com</p>
+        </div>
+        <div className="socialicons_contact_home_main">
+          <FaFacebook className="socialicons_contact_home_inner" />
+          <FaInstagram className="socialicons_contact_home_inner" />
+          <FaTwitter className="socialicons_contact_home_inner" />
+          <FaYoutube className="socialicons_contact_home_inner" />
+          <FaSkype className="socialicons_contact_home_inner" />
+        </div>
         {/* </div> */}
       </div>
       <div className="ContactUsCards_mapblock">

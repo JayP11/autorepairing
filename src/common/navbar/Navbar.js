@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="phcall_icon">
               <MdCall />
             </div>
-            <div>
+             <div className="contact_call_mainnav">
               <div className="callusnow">
                 <h5>Call us now</h5>
               </div>
@@ -39,7 +39,8 @@ const Navbar = () => {
             <div className="clock_icon">
               <HiClock />
             </div>
-            <div>
+                        <div className="openinghours_time_mainnav">
+
               <div className="openinghours">
                 <h5>OPENING HOURS</h5>
               </div>
@@ -77,7 +78,7 @@ const Navbar = () => {
               <div className="phcall_icon">
                 <MdCall />
               </div>
-              <div>
+              <div className="callusnow_phno">
                 <div className="callusnow">
                   <h5>Call us now</h5>
                 </div>
@@ -90,7 +91,7 @@ const Navbar = () => {
               <div className="clock_icon">
                 <HiClock />
               </div>
-              <div>
+              <div className="openinghours_time">
                 <div className="openinghours">
                   <h5>OPENING HOURS</h5>
                 </div>

@@ -37,10 +37,30 @@ const AppointmentForm = () => {
 
   // checkboxes
   const [oilchanged, setOilChanged] = useState(false);
+  const [ServicesTitle, setServicesTitle] = useState();
+  const [getcon, setcon] = useState(false);
   const [TirePurchase, setTirePurchase] = useState(false);
   const [Brakes, setBrakes] = useState(false);
   const [TireServices, setTireServices] = useState(false);
 
+  const data = [
+    {
+      id: 1,
+      title: "Oil Change",
+    },
+    {
+      id: 2,
+      title: "Brakes",
+    },
+    {
+      id: 3,
+      title: "Tire Purchase/Installation",
+    },
+    {
+      id: 4,
+      title: "Tire Services",
+    },
+  ];
   return (
     <div className="AppointmentForm_main">
       <div style={{}}>
@@ -54,12 +74,20 @@ const AppointmentForm = () => {
             <h3>APPOINTMENT DETAILS</h3>
           </div>
 
-          <div className="steps_main">
+          <div
+            className="steps_main"
+            onClick={() => {
+              SetSteps(2);
+            }}>
             <h3 className="numbers_steps">02</h3>
             <h3>MY INFORMATION</h3>
           </div>
 
-          <div className="steps_main">
+          <div
+            className="steps_main"
+            onClick={() => {
+              SetSteps(3);
+            }}>
             <h3 className="numbers_steps">03</h3>
             <h3>REVIEW & SUBMIT</h3>
           </div>
@@ -150,18 +178,45 @@ const AppointmentForm = () => {
               </div>
               <div className="checkbox_main">
                 <div className="checkbox">
-                  <div className="p">
-                    <label className="checkbox_label_appointment">
-                      <input
-                        type="checkbox"
-                        name="check_group"
-                        value={oilchanged}
-                        onChange={() => setOilChanged(!oilchanged)}
-                      />
-                      Oil Change
-                    </label>
-                  </div>
-                  {oilchanged === true ? (
+                  {data &&
+                    data.map((item, index) => {
+                      return (
+                        <>
+                          <div className="p">
+                            <label className="checkbox_label_appointment">
+                              <input
+                                type="checkbox"
+                                name="check_group"
+                                value={oilchanged}
+                                // onChange={() => setOilChanged(!oilchanged)
+                                onChange={() => {
+                                  setServicesTitle(item.id);
+                                  setcon(!getcon);
+                                }}
+                              />
+                              {item.title}
+                            </label>
+                            <hr
+                              style={{
+                                border: "1px solid lightgray",
+                                width: "90%",
+                              }}
+                            />
+                          </div>
+                          {item.id == ServicesTitle && getcon === true ? (
+                            <textarea
+                              id=""
+                              name=""
+                              rows="2"
+                              placeholder="Oil Change Comments"
+                              className="input_field_appointment"
+                            />
+                          ) : null}
+                        </>
+                      );
+                    })}
+
+                  {/* {oilchanged === true ? (
                     <div>
                       <textarea
                         id=""
@@ -171,11 +226,10 @@ const AppointmentForm = () => {
                         className="input_field_appointment"
                       />
                     </div>
-                  ) : null}
+                  ) : null} */}
                 </div>
-                <hr style={{ border: "1px solid lightgray", width: "90%" }} />
 
-                <div className="checkbox">
+                {/* <div className="checkbox">
                   <div>
                     <label className="checkbox_label_appointment">
                       <input
@@ -199,8 +253,7 @@ const AppointmentForm = () => {
                     </div>
                   ) : null}
                 </div>
-                <hr style={{ border: "1px solid lightgray", width: "90%" }} />
-
+ 
                 <div className="checkbox">
                   <div>
                     <label className="checkbox_label_appointment">
@@ -225,8 +278,7 @@ const AppointmentForm = () => {
                     </div>
                   ) : null}
                 </div>
-                <hr style={{ border: "1px solid lightgray", width: "90%" }} />
-
+ 
                 <div className="checkbox">
                   <div>
                     <label className="checkbox_label_appointment">
@@ -251,8 +303,7 @@ const AppointmentForm = () => {
                     </div>
                   ) : null}
                 </div>
-                <hr style={{ border: "1px solid lightgray", width: "90%" }} />
-
+ 
                 <div className="checkbox">
                   <div>
                     <label className="checkbox_label_appointment">
@@ -262,12 +313,11 @@ const AppointmentForm = () => {
                         value={TireServices}
                         onChange={() => setTireServices(!TireServices)}
                       />
-                      Tire Services
+                      Tire
                     </label>
                   </div>
                   {TireServices === true ? (
                     <div>
-                      {/* <textarea name="" /> */}
                       <textarea
                         id=""
                         name=""
@@ -277,8 +327,7 @@ const AppointmentForm = () => {
                       />
                     </div>
                   ) : null}
-                </div>
-                <hr style={{ border: "1px solid lightgray", width: "90%" }} />
+                </div> */}
               </div>
             </div>
             <div>
@@ -507,7 +556,11 @@ const AppointmentForm = () => {
                 <div>
                   <div>
                     <label className="checkbox_label_appointment">
-                      <input type="checkbox" name="check_group"  style={{marginTop:"0.4rem"}}/>
+                      <input
+                        type="checkbox"
+                        name="check_group"
+                        style={{ marginTop: "0.4rem" }}
+                      />
                       Yes, email me service reminders, coupons, and special
                       offers from us.
                     </label>

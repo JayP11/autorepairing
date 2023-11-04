@@ -114,7 +114,7 @@ const StoresNearYou = () => {
                     </p>
                   </div>
                 </div>
-                <div>
+                <div style={{marginTop:"1rem"}}>
                   <Link to="/AppointmentForm">
                     <Link
                       className="button btn_stores"
